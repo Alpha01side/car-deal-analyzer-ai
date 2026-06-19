@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury Wardrobe Categories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="showroom" aria-labelledby="page-title">
+      <section class="hero-copy">
+        <p class="eyebrow">Premium Merchandise</p>
+        <h1 id="page-title">Slide through the private wardrobe</h1>
+        <p class="intro">Explore elevated essentials in a cinematic closet built with walnut, smoked glass, matte black steel, and warm LED lighting.</p>
+      </section>
+
+      <section class="wardrobe-shell" aria-label="Merchandise categories">
+        <div class="ambient-glow" aria-hidden="true"></div>
+        <div class="wardrobe-header">
+          <div>
+            <span class="section-kicker">Now viewing</span>
+            <h2 id="active-category">T-Shirts</h2>
+          </div>
+          <div class="progress-dots" role="tablist" aria-label="Choose category">
+            <button class="dot active" type="button" aria-label="Show T-Shirts" data-index="0"></button>
+            <button class="dot" type="button" aria-label="Show Hoodies" data-index="1"></button>
+            <button class="dot" type="button" aria-label="Show Caps" data-index="2"></button>
+            <button class="dot" type="button" aria-label="Show Accessories" data-index="3"></button>
+          </div>
+        </div>
+
+        <button class="nav-arrow nav-prev" type="button" aria-label="Previous category">
+          <span aria-hidden="true">‹</span>
+        </button>
+        <button class="nav-arrow nav-next" type="button" aria-label="Next category">
+          <span aria-hidden="true">›</span>
+        </button>
+
+        <div class="wardrobe-viewport" id="wardrobeViewport">
+          <div class="wardrobe-track" id="wardrobeTrack">
+            <article class="category-panel tshirts" data-title="T-Shirts">
+              <div class="panel-backdrop"></div>
+              <div class="closet-frame">
+                <div class="led-strip"></div>
+                <div class="hanging-rail"></div>
+                <div class="hanger hanger-one"><span></span></div>
+                <div class="hanger hanger-two"><span></span></div>
+                <div class="tee tee-cream"></div>
+                <div class="tee tee-black"></div>
+                <div class="fold-stack stack-one"><i></i><i></i><i></i></div>
+                <div class="fold-stack stack-two"><i></i><i></i><i></i></div>
+              </div>
+              <div class="category-content">
+                <p class="category-tag">Minimal essentials</p>
+                <h3>T-Shirts</h3>
+                <p>Premium cotton silhouettes, folded stacks, and crisp hanging fits for refined everyday wear.</p>
+                <a href="#t-shirts" class="shop-button">Shop T-Shirts</a>
+              </div>
+            </article>
+
+            <article class="category-panel hoodies" data-title="Hoodies">
+              <div class="panel-backdrop"></div>
+              <div class="closet-frame">
+                <div class="led-strip"></div>
+                <div class="hanging-rail"></div>
+                <div class="hoodie hoodie-charcoal"><span></span></div>
+                <div class="hoodie hoodie-taupe"><span></span></div>
+                <div class="wood-hanger left"></div>
+                <div class="wood-hanger right"></div>
+              </div>
+              <div class="category-content">
+                <p class="category-tag">Soft ambient layers</p>
+                <h3>Hoodies</h3>
+                <p>Heavyweight fleece displayed on walnut hangers under a warm showroom glow.</p>
+                <a href="#hoodies" class="shop-button">Shop Hoodies</a>
+              </div>
+            </article>
+
+            <article class="category-panel caps" data-title="Caps">
+              <div class="panel-backdrop"></div>
+              <div class="closet-frame shelf-scene">
+                <div class="led-strip"></div>
+                <div class="shelf shelf-top"></div>
+                <div class="shelf shelf-bottom"></div>
+                <div class="cap cap-one"></div>
+                <div class="cap cap-two"></div>
+                <div class="cap cap-three"></div>
+              </div>
+              <div class="category-content">
+                <p class="category-tag">Curated headwear</p>
+                <h3>Caps</h3>
+                <p>Structured caps presented like limited-edition pieces in a polished retail display.</p>
+                <a href="#caps" class="shop-button">Shop Caps</a>
+              </div>
+            </article>
+
+            <article class="category-panel accessories" data-title="Accessories">
+              <div class="panel-backdrop"></div>
+              <div class="closet-frame showcase-scene">
+                <div class="led-strip"></div>
+                <div class="glass-case"></div>
+                <div class="watch"></div>
+                <div class="mug"></div>
+                <div class="bag"></div>
+                <div class="keychain"></div>
+              </div>
+              <div class="category-content">
+                <p class="category-tag">Lifestyle objects</p>
+                <h3>Accessories</h3>
+                <p>Watches, mugs, bags, and keychains arranged in a smoked-glass showcase.</p>
+                <a href="#accessories" class="shop-button">Shop Accessories</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
